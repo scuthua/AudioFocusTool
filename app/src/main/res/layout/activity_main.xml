@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--使用FlexboxLayout来实现自动换行，后面就可以不断加button了-->
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flexDirection="row"
+    app:flexWrap="wrap"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="request"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_abandon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abandon"
+        android:textAllCaps="false" />
+
+</com.google.android.flexbox.FlexboxLayout>
